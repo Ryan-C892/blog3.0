@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://icons8.com/icons">
+<style>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #416A90;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #416A88;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}    
+</style>
+</head>
+<body id="blog" itemscope itemtype="http://schema.org/WebPage">
+    <header>
+    <div class="header">
+    <h1 id= "top">GameScroll</h1>
+    </div>
+    </header>
+    <nav class="cf">
+        <ul>
+        <li><a href="index.html" class="active" data-i18n="nav.index.html">Home</a></li>
+        <li><a href="gameReviews.html" class="gameReviews" data-i18n="nav.gameReviews">Game Reviews</a></li>
+        <li><a href="gameNews.html" class="gameNews" data-i18n="nav.gameNews">Game News</a></li>
+        <li><a href="guides.html" class="guides" data-i18n="nav.guides">Guides</a></li>
+        <li><a href="contact.html" class="contact" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+    </nav>
+<div class="container">
+<form action="action_page.php">
+
+    <label for="fname">First Name</label> 
+    <input type= "text" id="fname" name="firstname" placeholder="Your name...">
+    
+    <label for="1name">Last Name</label>
+    <input type="text" id="1name" name="lastname" placeholder="Your last name...">
+    
+    <label for="country">Country</label>
+    <select id="country" name="country">
+     <option value="australia">Austrailia</option>
+     <option value="canada">Canada</option>
+     <option value="uk">United Kingdom</option>
+     <option value="usa">USA</option>
+    </select>
+    
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subejct" placeholder="Write something..." style="height:200px">
+    </textarea>
+    
+    <input type="submit" value="Submit">
+
+</form>    
+</div>
+<div class= "customer-service" style= "bottom: 40px;">
+    <div id= "customer-message" class= "item">
+        <div class="iconfont icon_service">&#9742;</div>
+        <div class= "message">
+        <div class= "message-warp">
+            <div class="fakeimg" style= "display: block;">
+                <h5>Let's chat</h5>
+                <p>Email:
+                    <a target="_blank" href= "mailto:2spacewolves@gmail.com">2spacewolves@gmail.com</a></p>
+            </div>
+        </div>
+        </div>
+    <div onClick= "topFunction()" id= "top" title= "Go to top" class= "item" style= "display: block;">
+        <div class= "iconfont icon_top"><span style='font-size: 20px;'>&#8679;</span></div>
+    </div>
+    </div>
+</div>
+    <script>
+        var top = document.getElementById("top");
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+                if (doument.body.scrollTop > 20 ||
+                   document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+            
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+    </script>
+<footer>
+<div class="footer">
+  <h2>Footer</h2>
+<div class= "flex-container">
+    <div class="column">
+        <div class= "card">
+            <h3>About this blog</h3>
+            <div class= "box">
+            <p>I've always enjoyed role playing games for as long as I can remember. I don't think there is any specific reason for this facination for the genre. If I would nail it down to one reason I would say it is because there is always a level of freedom that iss nowhere to be found in most genres. When creating this blog I felt it was best to focus on the role playing genre in order to stand out from other gaming bloggers. I will provide my thoughts on past and current role playing games as well as the latest news in the gaming world. I will also post the occassional guide for the hardest sections of any role playing game. I hope this blog will become an endearing experience for all who visit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class= "card">
+          <h3>About Me</h3>
+            <div class= "box">
+            <div class= "fakeimg" style= "height:100%;"><img src= "/images/depositphotos_96436808-stock-illustration-human-icon-support-vectors-design.jpg" alt="HTML5 Icon" ></div>
+            <p>I'm Ryan Hetherington and I'm a blogger with an interest for sharing my passion for gaming.</p>
+            <p>In 2009 I graduated from high school and since then,  I've been looking for a career anywhere I could. I've been in and out of college and manual labor for the past decade. Recently I took to learning web development as it seemed fun and working from home has its advantages. I decided to dedicate myself towards blogging and combine it with my personal interests. I hope that the skills I learn pay off in the future, and I hope that I can deliver the best content for gamers everywhere.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+</body>
+</html>

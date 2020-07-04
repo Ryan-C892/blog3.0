@@ -1,0 +1,509 @@
+/* Main Body */
+html {
+    background: #E6E3D4;
+}
+body {
+  font-family: 100% Georgia, "Times New Roman", Times, serif;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0 auto;
+  letter-spacing: 0.5px;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 100% Georgia, "Times New Roman", Times, serif;
+  font-size: 1.1em;
+  font-weight: 0;
+  text-shadow: 0 1px 0 #333;
+  color: #333; 
+}
+h2 {
+   font-size: 1.5em;
+   color: #FFE8CB;
+   background: #916A31
+}
+h4 {
+  font-size: 1em;
+}
+
+/* Header */
+header {
+  padding: 5px;
+  background-color: #916A31;
+}
+header h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #FFE8CB;
+    margin: 1.5 0px;
+    font-family: cursive, sans-serif;
+}
+
+/* Micro-clearfix */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+
+.cf {
+    zoom:1;
+}
+
+/* Horizontal Navigation Bar */
+nav {
+    background: #916A31;
+    height: 2.3em;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+ul {
+    background: #916A31;
+    height: 2em;
+    width: 100%;
+}
+li a {
+    display: block;
+    line-height: 2em;
+    padding: 0 1em;
+    color: #FFE8CB;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #FFE8CB;
+    color: #916A31;
+    height: 2em;
+    padding-top: .3em;
+    position: relative;
+    top: -.3em;
+    border-radius: .3em .3em 0 0;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 67%;
+  padding-left: 20px
+}
+
+/* Text boxes for left column */
+.leftcolumn .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: #917F63;
+}
+.leftcolumn .flex-container .box {
+    background-color: #f1f1f1;
+    width: 91%;
+    margin-right: 10px;
+    padding: 10px;
+    text-align: left;
+    line-height: 20px;
+}
+
+/* Add a card effect for left column */
+.leftcolumn .card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+  color: black;
+  width: 78%;
+}
+
+/* Right column */
+.rightcolumn {
+  display: block;
+  float: left;
+  width: 30%;
+}
+.card img{
+    width: 100%;
+}
+.rightcolumn .card img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px
+}
+
+/* Text boxes for right column */
+.rightcolumn .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: #917F63;
+}
+.rightcolumn .flex-container .box {
+    background-color: #f1f1f1;
+    width: 91%;
+    margin-right: 10px;
+    padding: 10px;
+    text-align: left;
+    line-height: 20px;
+}
+
+/* Add a card effect for right column */
+.rightcolumn .card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+  color: black;
+  width: 78%;
+  border-radius: 4px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Comment Box */
+#respond {
+    margin-top: 20px;
+}
+#respond input[type='text'],
+#respond input[type='email'],
+#respond textarea {
+    margin-bottom: 10px;
+    padding-right: 0;
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    line-height: 1.4em;
+}
+#respond input[type='submit'] {
+    background-color: #917F63;
+    color: #f1f1f1;
+}
+
+/* Popular Post */
+.popular h3 {
+    font-size: 18px;
+    line-height: 135%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.popular a {
+    font-size: 14px;
+    color: black;
+    display: block;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.popular a:hover {
+    text-decoration: underline;
+    color: #f1f1f1;
+}
+.popular .list {
+    margin-top: 32px;
+}
+.popular .list a img {
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    margin-right: 16px;
+    transition: 0.3s;
+}
+.popular .list a  {
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+    color: #f1f1f1;
+    overflow: hidden;
+    height: 50px;
+    width: 170px;
+    padding-bottom: 15px;
+}
+.popular .list a p {
+    color: #917F63;
+    font-size: 12px;
+    line-height: 19px;
+}
+.popular a:hover {
+    background: #AD9B7F;
+    color: #f1f1f1;
+    position: relative;
+    top:-.3em;
+    border-radius: 4px;
+    border-bottom: .3em .3em 0 0;
+    padding-bottom: wrap;
+}
+.popular .fakeimg {
+  color: #eee;
+  background-color: #917F63;
+  width: 85%;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Social Media links */
+.container {
+    position: relative;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px 0 30px 0;
+    margin: 15px 15px 15px 0;
+}
+input, .btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    text-decoration: none;
+}
+input:hover, .btn:hover {
+    opacity: 1;
+}
+.fb {
+    background-color: #3B5998;
+    color: white;
+}
+.twitter {
+    background-color: #55ACEE;
+    color: white;
+}
+.google {
+    background-color: #dd4b39;
+    color: white;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.col {
+    float: left;
+    width: 80%;
+    margin: auto;
+    padding: 0 10px;
+    margin-top 6px;
+}
+
+/* Pagination */
+.center {
+    text-align: center;
+    margin: 0;
+}
+.pagination a {
+    background-color: #916A31;
+    color: #eee;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 6px;
+    margin: 2px;
+}
+.pagination a.active {
+    background-color: #AD9B7F;
+    color: #eee;
+}
+.pagination a:hover:not(.active) {
+    background-color: #AD9B7F;
+    color: #eee;
+    position: relative;
+    top:-.3em;
+    border-radius: 6px;
+    border-bottom: 6px;
+    cursor: default;
+}
+
+/* Message and Top Scrollbar */
+.customer-service {
+    position: fixed;
+    z-index: 10;
+    right: 25px;
+    bottom: 60px;
+}
+.customer-service .item {
+    cursor: pointer;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    width: 56px;
+    height: 56px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgb(0, 0, 0.02);
+}
+.customer-service .item .iconfont {
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #333;
+    transition: 0.3s;
+}
+.customer-service .item .message {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    padding-right: 14px;
+    display: none;
+}
+.customer-service .item .message .message-wrap {
+    box-shadow: 0 4px 8px rgb(0, 0, 0.02);
+    border: 1px solid #E9E9E9;
+    background: #ffffff;
+    border-radius 6px;
+    padding: 13px 16px 10px;
+    text-align: left;
+}
+.customer-service .item .message .message-wrap h5 {
+    font-size: 14px;
+    color: #333;
+    line-height: 24px;
+    margin: 0 0 7px;
+    font-weight: 400;
+}
+.customer-service .item .message .message-wrap p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 24px;
+    white-space: nowrap;
+    color: #333;
+}
+.customer-service .item .message .message-wrap p a {
+    color: #AD9B7F;
+    transition: 0.3s;
+}
+.customer-service .item .message .message-wrap p a:hover {
+    color: #eee;
+    text-decoration: underline;
+}
+.customer-service .item:hover {
+    background-color: #AD9B7F;
+    border-color: #AD9B7F;
+}
+.customer-service .item:hover .iconfont {
+    color: #eee;
+}
+.customer-service .item:hover .message {
+    display: block;
+}
+.customer-service icon_top {
+    display: none;
+}
+.customer-service .fakeimg {
+    border: 1px solid #E9E9E9; 
+    border-radius: 6px;
+    display: block;
+    font-size: 16px;
+    line-height: 25px;
+    color: #f1f1f1;
+    margin-bottom: 8px;
+    margin-right: 20px;
+    overflow: hidden;
+    height: 100px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0.02);
+}
+.customer-service h5 {
+    color: #f1f1f1;
+    font-size: 18px;
+    margin: 3px;
+}
+.customer-service .fakeimg a {
+    color: #f1f1f1;
+}
+
+/* Footer */
+.footer .fakeimg {
+  color: #eee;
+  background-color: #917F63;
+  width: 40%;
+  padding: 15px;
+}
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+.flex-container > div {
+    display: flex;
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+}
+.footer {
+  padding: 20px;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  background: #916A31;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/* Text boxes for footer */
+.footer .flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: #917F63;
+}
+.footer .flex-container .box {
+    background-color: #f1f1f1;
+    width: 91%;
+    margin-right: 10px;
+    padding: 10px;
+    text-align: left;
+    line-height: 20px;
+}
+
+/* Add a card effect for footer */
+.footer .card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+  color: black;
+  width: 78%;
+}
+.footer .fakeimg {
+    display: flex;
+    align-content: center;
+    margin-left: 25%;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
